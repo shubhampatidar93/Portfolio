@@ -1,0 +1,335 @@
+#element {
+    color: rgb(28, 222, 216);
+    line-height: 0;
+}
+
+/* body */
+
+body {
+    background-color: rgb(5, 14, 49);
+    color: white;
+    font-family: 'oxanium', sans-serif;
+}
+
+/*nav bar*/
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    height: 70px;
+    background-color: rgb(43, 62, 128);
+    border-radius: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 4%;
+    margin-left: 20%;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color:  rgb(28, 222, 216);
+    font-size: 1.03rem;
+}
+
+.left {
+    font-size: 4rem;
+}
+
+/* section 1*/
+
+.first {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.first div {
+    width: 30%;
+}
+
+.lefts1 {
+    margin: 50px 0;
+    align-items: center;
+    text-align: center;
+}
+
+.lefts1 h4 {
+    font-size: 2rem;
+    line-height: 0.2;
+}
+
+.lefts1 h2 {
+    color: rgb(28, 222, 216);
+    font-size: 3rem;
+    line-height: 0;
+}
+
+.lefts1 h3 {
+    font-size: 2.5rem;
+    line-height: 0;
+}
+
+.rights2 img {
+    border-radius: 50%;
+    height: 60%;
+    margin: 60px;
+    margin-top: 80px;
+    border: solid 4px rgb(28, 222, 216);
+    box-shadow:0 0 1rem rgb(28, 222, 216);
+}
+
+.rights2 {
+    height: 450px;
+}
+
+/* section heading */
+
+.heading {
+    background-color: rgb(43, 62, 128);
+    text-align: center;
+    padding: 1px;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+.about {
+    text-align: center;
+     margin:20px 40px 20px 40px;
+    padding: 30px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* footer */
+
+footer {
+    background-color: rgb(28, 37, 70);
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 10px;
+}
+
+/* social */
+.social {
+   display: inline;
+   direction: ltr;
+
+}
+.social a{ 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    background: transparent;
+    font-size: 1.5rem;
+    color:rgb(28, 222, 216);
+    margin: 2rem 1rem 2rem 0;
+    transition: .5s ease;
+    border: .2rem solid rgb(28, 222, 216);
+    text-decoration: none;
+}
+.social a:hover {
+    background: rgb(28, 222, 216);
+    color: rgb(5, 14, 49);
+    box-shadow: 0 0 1rem rgb(28, 222, 216);
+} 
+
+/* education */
+
+.edu {
+    margin:20px 40px 20px 40px;
+    padding: 20px;
+   
+}
+.education {
+    margin-top: 20px;
+    padding: 20px;
+}
+.education p{
+    margin-left: 10%;
+}
+hr{
+   
+    border: none;
+    border-top: 1px solid rgb(28, 222, 216);
+}
+
+#line{
+    text-align: center;
+    margin:20px 40px 20px 40px;
+}
+
+
+/* Responsive styles */
+
+/* Small devices (phones, less than 600px) */
+@media only screen and (max-width: 599px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 0.5rem 1rem;
+    }
+
+    nav ul {
+        margin-left: 0;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    .left{
+        text-align: center;
+    }
+
+    .first {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .first div {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 20px auto;
+        
+    }
+
+    .lefts1 h2 {
+        font-size: 2.5rem;
+    }
+
+    .lefts1 h3 {
+        font-size: 2rem;
+    }
+
+    .lefts1 h4 {
+        font-size: 1.5rem;
+        margin: 10%;
+    }
+
+    .rights2 img {
+        margin: 20px auto;
+        max-width: 250px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: -100px;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+        padding: 8px 0;
+    }
+
+    .second{
+        margin-top:-100px ;
+    }
+
+    .about {
+        margin: 15px 20px;
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 1rem;
+        padding: 15px 10px;
+    }
+
+    .social a {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
+        margin: 1.2rem 0.8rem 1.2rem 0;
+    }
+
+    .education p {
+        margin-left: 5%;
+        font-size: 0.9rem;
+    }
+
+    .edu,
+    .education {
+        padding: 10px;
+        margin: 10px 20px;
+    }
+}
+
+/* Medium devices (tablets, 600px to 900px) */
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    nav {
+        flex-wrap: nowrap;
+        height: 70px;
+    }
+
+    nav ul {
+        margin-left: 10%;
+        gap: 1.2rem;
+    }
+
+    .first {
+        flex-wrap: wrap;
+        margin: 15px 25px;
+    }
+
+    .first div {
+        width: 45%;
+        min-width: 220px;
+        margin-bottom: 20px;
+    }
+
+    .lefts1 h2 {
+        font-size: 2.7rem;
+    }
+
+    .lefts1 h3 {
+        font-size: 2.2rem;
+    }
+
+    .lefts1 h4 {
+        font-size: 1.8rem;
+    }
+
+    .rights2 img {
+        max-width: 300px;
+        margin: 40px auto 0 auto;
+    }
+
+    .about {
+        margin: 20px 30px;
+        padding: 25px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Large devices (desktops, 900px and up) */
+@media only screen and (min-width: 900px) {
+    .first div {
+        width: 30%;
+    }
+
+    nav ul {
+        margin-left: 20%;
+    }
+
+    .about {
+        margin: 20px 40px;
+        padding: 30px;
+        font-size: 1.2rem;
+    }
+}
